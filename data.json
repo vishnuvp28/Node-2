@@ -1,0 +1,213 @@
+// // import {MongoClient} from "mongodb";
+// // const Mongo_URL="mongodb://127.0.0.1:27017"
+// // export async function createDbConnection(){
+// //     const client=new MongoClient(MONGO_URL)
+// //     await client.connect()
+// //     console.log("Mongodb is connected succesfully")
+// //     return client
+// // }
+// // export const client=await createDbConnection()
+
+// const data = [
+//     {
+//       id: "1",
+//       noOfSeats: 100,
+//       amenities: [
+//             "Ac",
+//             "chairs",
+//             "discolights"
+//         ],
+//       price: 5000,
+//       ifBooked: "true",
+//       customerName: "sumithra",
+//       date: "05-feb-2022 ",
+//       startTime: "10-feb-2022 at 12PM",
+//       endTrim: "11-feb-2022 at 11am",
+//       RoomId: 201,
+//       RoomName: "Duplex",
+//     },
+//     {
+//       id: "2",
+//       noOfSeats: 100,
+//       amenities: [
+//             "Ac",
+//             "chairs",
+//             "discolights"
+//         ],
+//       price: 5000,
+//       ifBooked: "false",
+//       customerName: "",
+//       date: "",
+//       startTime: "",
+//       endTrim: "",
+//       RoomId: 202,
+//       RoomName: "Duplex",
+//     },
+//     {
+//       id: "3",
+//       noOfSeats: 100,
+//       amenities: [
+//             "Ac",
+//             "chairs",
+//             "discolights"
+//         ],
+//       price: 5000,
+//       ifBooked: "true",
+//       customerName: "sundar",
+//       date: "05-feb-2022 ",
+//       startTime: "10-feb-2022 at 12PM",
+//       endTrim: "11-feb-2022 at 11am",
+//       RoomId: 203,
+//       RoomName: "Duplex",
+//     },
+//     {
+//       id: "4",
+//       noOfSeats: 100,
+//       amenities: [
+//             "Ac",
+//             "chairs",
+//             "discolights"
+//         ],
+//       price: 5000,
+//       ifBooked: "true",
+//       customerName: "suresh",
+//       date: "05-feb-2022 ",
+//       startTime: "10-feb-2022 at 12PM",
+//       endTrim: "11-feb-2022 at 11am",
+//       RoomId: 204,
+//       RoomName: "Duplex",
+//     },
+//     {
+//         "id": "5",
+//       noOfSeats: 100,
+//       amenities: [
+//             "Ac",
+//             "chairs",
+//             "discolights"
+//         ],
+//       price: 5000,
+//       ifBooked: "false",
+//       customerName: "",
+//       date: "",
+//       startTime: "",
+//       endTrim: "",
+//       RoomId: 205,
+//       RoomName: "Duplex",
+//     },
+//     {
+//       id: "6",
+//       noOfSeats: 50,
+//       amenities: [
+//             "Ac",
+//             "chairs"
+//         ],
+//       price: 2500,
+//       ifBooked: "true",
+//       customerName: "baskar",
+//       date: "05-feb-2022 ",
+//       startTime: "10-feb-2022 at 12PM",
+//       endTrim: "11-feb-2022 at 11am",
+//       RoomId: 206,
+//       RoomName: "Duplex",
+//     },
+//     {
+//       id: "7",
+//       noOfSeats: 100,
+//       amenities: [
+//             "Ac",
+//             "chairs",
+//             "discolights"
+//         ],
+//       price: 5000,
+//       ifBooked: "true",
+//       customerName: "karthik",
+//       date: "05-feb-2022 ",
+//       startTime: "10-feb-2022 at 12PM",
+//       endTrim: "11-feb-2022 at 11am",
+//       RoomId: 207,
+//       RoomName: "Duplex",
+//     },
+//     {
+//       id: "8",
+//       noOfSeats: 50,
+//       amenities: [
+//             "Ac",
+//             "chairs",
+//             "discolights"
+//         ],
+//       price: 2500,
+//       ifBooked: "true",
+//       customerName: "chandru",
+//       date: "05-feb-2022 ",
+//       startTime: "10-feb-2022 at 12PM",
+//       endTrim: "11-feb-2022 at 11am",
+//       RoomId: 208,
+//       RoomName: "Duplex",
+//     },
+//     {
+//       id: "9",
+//       noOfSeats: 50,
+//       amenities: [
+//             "Ac",
+//             "chairs"
+//         ],
+//       price: 2500,
+//       ifBooked: "false",
+//       customerName: "",
+//       date: "",
+//       startTime: "",
+//       endTrim: "",
+//       RoomId: 209,
+//       RoomName: "Duplex",
+//     },
+//     {
+//       id: "10",
+//       noOfSeats: 100,
+//       amenities: [
+//             "Ac",
+//             "chairs",
+//             "discolights"
+//         ],
+//       price: 5000,
+//       ifBooked: "true",
+//       customerName: "vishnu",
+//       date: "05-feb-2022 ",
+//       startTime: "10-feb-2022 at 12PM",
+//       endTrim: "11-feb-2022 at 11am",
+//       RoomId: 210,
+//       RoomName: "Duplex",
+//     },
+//     {
+//       id: "11",
+//       noOfSeats: 100,
+//       amenities: [
+//             "Ac",
+//             "chairs",
+//             "discolights"
+//         ],
+//       price: 5000,
+//       ifBooked: "true",
+//       customerName: "vishnu",
+//       date: "05-feb-2022 ",
+//       startTime: "10-feb-2022 at 12PM",
+//       endTrim: "11-feb-2022 at 11am",
+//       RoomId: 211,
+//       RoomName: "Duplex",
+//     },
+//     {
+//       id: "12",
+//       noOfSeats: 50,
+//       amenities: [
+//             "Ac",
+//             "chairs"
+//         ],
+//       price: 2000,
+//       ifBooked: "false",
+//       customerName: "",
+//       date: "",
+//       startTime: "",
+//       endTrim: "",
+//       RoomId: 212,
+//       RoomName: "Duplex",
+//     },
+// ];
