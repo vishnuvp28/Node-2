@@ -18,7 +18,7 @@ const app = express();
 app.use(express.json())
 
 var home =
-  "Hello all , Welcome to the HallBooking API 🙌😊 , 1) For halldetails = /hallDetails , 2) For hallDetails by ID = /hallDetails/643d67ad4e8e8cc0a599ca26 (OR) /hallDetails/643d67ad4e8e8cc0a599ca27 (OR) /hallDetails/643d67ad4e8e8cc0a599ca28 (OR) /hallDetails/643d67ad4e8e8cc0a599ca29 (OR) /hallDetails/643d67ad4e8e8cc0a599ca2a , 3) For rooms with booked data = /bookedHalls , 4) For customers with booked data = /bookedCustomers , 5) For number of times booked by a customer = /noOfTimes ";
+  "Hello world";
 
 //apis
 app.get("/",async function (req, res) {
